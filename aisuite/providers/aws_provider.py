@@ -14,7 +14,7 @@ class BedrockConfig:
 
     def __init__(self, **config):
         self.region_name = config.get(
-            "region_name", os.getenv("AWS_REGION_NAME", "us-west-2")
+            "region_name", os.getenv("AWS_REGION", "us-west-2")
         )
 
     def create_client(self):

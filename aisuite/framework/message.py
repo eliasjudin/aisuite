@@ -1,4 +1,4 @@
-"""Interface to hold contents of api responses when they do not conform to the OpenAI style response"""
+"""Interface to hold contents of api responses when they do not confirm to the OpenAI style response"""
 
 from pydantic import BaseModel
 from typing import Literal, Optional
