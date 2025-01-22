@@ -52,4 +52,26 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
+## Detailed Instructions for Setting Up Google Gemini API with `aisuite`
+
+1. **Obtain API Key**:
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Navigate to the "APIs & Services" section.
+   - Click on "Credentials".
+   - Click on "Create credentials" and select "API key".
+   - Copy the generated API key.
+
+2. **Set Environment Variable**:
+   - Open your terminal or command prompt.
+   - Set the `GEMINI_API_KEY` environment variable with the copied API key:
+     ```shell
+     export GEMINI_API_KEY="your-gemini-api-key"
+     ```
+
+3. **Install Required Package**:
+   - Ensure you have the `google-genai` package installed. You can install it using pip or poetry as shown in the installation section above.
+
+4. **Use the API in Your Code**:
+   - Follow the example code snippet provided in the "Create a Chat Completion" section to use the Google Gemini API with `aisuite`.
+
 Happy coding! If you would like to contribute, please read our [Contributing Guide](../CONTRIBUTING.md).
